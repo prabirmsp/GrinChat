@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/pre-dexed/debug/classes-8ff6b9230e4435ea9294bdb8cee70b3510a20fce.jar" />
+    </item>
+    <item
+        jar="/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/pre-dexed/debug/classes-631d5532439244a9e501259fba890eedd3646787.jar" />
+    </item>
+    <item
+        jar="/home/prabir/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-65fd953374bce088465cbd483bec2f44757e1bf7.jar" />
+    </item>
+    <item
+        jar="/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-5b4a18c20728dd9a99a39e39db050978144849bf.jar" />
+    </item>
+    <item
+        jar="/home/prabir/Documents/AppDev/GrinChat/Parse-1.8.0/Parse-1.8.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="61cf79e2775b882ac0ea32d60ea2dbbf6f245cea">
+        <dex dex="/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/pre-dexed/debug/Parse-1.8.0-a07881a5e4e63c2a53dcc0e09020c006b1f781a4.jar" />
+    </item>
+    <item
+        jar="/home/prabir/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-715acf095f9458167cdb35a4967160245fde9093.jar" />
+    </item>
+
+</items>
