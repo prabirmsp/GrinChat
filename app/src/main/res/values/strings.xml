@@ -29,6 +29,8 @@
     <string name="file_too_large">The selected file is too large. Video needs to be under 10 MB!</string>
     <string name="camera">Camera</string>
     <string name="action_send">Send</string>
+    <string name="error_sending_file">There was an error sending your file. Please select another file.</string>
+    <string name="message_sent">Message Sent!</string>
 
     <string-array name="camera_choices">
         <item>Take Picture</item>
@@ -38,5 +40,6 @@
     </string-array>
 
     <string name="title_activity_recipients">Recipients</string>
+    <string name="title_activity_view_image">GrinChat</string>
 
 </resources>

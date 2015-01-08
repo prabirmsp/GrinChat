@@ -141,6 +141,11 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="message_list_item_vertical_margin">8dp</dimen>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
@@ -178,10 +183,12 @@
     <string name="emptyFriends">Haha, you have no friends!</string>
     <string name="emptyInbox">No new messages!</string>
     <string name="error_access_memory">There was a problem acessing your device\'s external storage.</string>
+    <string name="error_sending_file">There was an error sending your file. Please select another file.</string>
     <string name="file_too_large">The selected file is too large. Video needs to be under 10 MB!</string>
     <string name="hello_world">Hello world!</string>
     <string name="login">Login</string>
     <string name="loginError">Please make sure you complete all the fields!</string>
+    <string name="message_sent">Message Sent!</string>
     <string name="noAccount">Don\'t have an account?</string>
     <string name="password">Password</string>
     <string name="signup">Sign Up!</string>
@@ -193,6 +200,7 @@
     <string name="title_activity_main_activity2">MainActivity2</string>
     <string name="title_activity_recipients">Recipients</string>
     <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_view_image">GrinChat</string>
     <string name="title_section1">Inbox</string>
     <string name="title_section2">Friends</string>
     <string name="title_section3">Section 3</string>

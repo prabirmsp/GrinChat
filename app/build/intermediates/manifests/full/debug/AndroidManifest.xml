@@ -60,6 +60,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.prabir.grinchat.MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.prabir.grinchat.ViewImageActivity"
+            android:label="@string/title_activity_view_image"
+            android:parentActivityName="com.example.prabir.grinchat.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.prabir.grinchat.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

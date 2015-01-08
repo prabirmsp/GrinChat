@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageIcon"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/message_list_item_vertical_margin"
+        android:paddingTop="@dimen/message_list_item_vertical_margin"
+        android:src="@drawable/ic_action_play_over_video"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerVertical="true"
+        android:id="@+id/senderLabel"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/messageIcon"/>
+</RelativeLayout>

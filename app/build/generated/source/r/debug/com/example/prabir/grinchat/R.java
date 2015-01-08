@@ -1249,6 +1249,7 @@ containing a value of this type.
         public static final int dialog_fixed_width_minor=0x7f08002a;
         public static final int disabled_alpha_material_dark=0x7f08002b;
         public static final int disabled_alpha_material_light=0x7f08002c;
+        public static final int message_list_item_vertical_margin=0x7f08002d;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_holo_dark=0x7f020000;
@@ -1303,8 +1304,10 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int ic_action_camera=0x7f020033;
-        public static final int ic_action_send_now=0x7f020034;
-        public static final int ic_launcher=0x7f020035;
+        public static final int ic_action_picture=0x7f020034;
+        public static final int ic_action_play_over_video=0x7f020035;
+        public static final int ic_action_send_now=0x7f020036;
+        public static final int ic_launcher=0x7f020037;
     }
     public static final class id {
         public static final int accountTextView=0x7f090044;
@@ -1315,15 +1318,16 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f090001;
         public static final int action_bar_subtitle=0x7f09001f;
         public static final int action_bar_title=0x7f09001e;
-        public static final int action_camera=0x7f09004b;
+        public static final int action_camera=0x7f09004e;
         public static final int action_context_bar=0x7f090032;
-        public static final int action_logout=0x7f09004a;
+        public static final int action_logout=0x7f09004d;
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_send=0x7f09004c;
+        public static final int action_send=0x7f09004f;
+        public static final int action_settings=0x7f090050;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090016;
         public static final int beginning=0x7f090013;
@@ -1344,11 +1348,13 @@ containing a value of this type.
         public static final int icon=0x7f090026;
         public static final int ifRoom=0x7f090018;
         public static final int image=0x7f090023;
+        public static final int imageView=0x7f090049;
         public static final int listMode=0x7f090009;
         public static final int listView=0x7f09003f;
         public static final int list_item=0x7f090025;
         public static final int loginButton=0x7f090042;
-        public static final int menu_editFriends=0x7f090049;
+        public static final int menu_editFriends=0x7f09004c;
+        public static final int messageIcon=0x7f09004a;
         public static final int middle=0x7f090015;
         public static final int never=0x7f090019;
         public static final int noFriends=0x7f090046;
@@ -1369,6 +1375,7 @@ containing a value of this type.
         public static final int search_plate=0x7f090039;
         public static final int search_src_text=0x7f09003a;
         public static final int search_voice_btn=0x7f09003e;
+        public static final int senderLabel=0x7f09004b;
         public static final int shortcut=0x7f09002a;
         public static final int showCustom=0x7f09000f;
         public static final int showHome=0x7f090010;
@@ -1417,13 +1424,16 @@ containing a value of this type.
         public static final int activity_main=0x7f030019;
         public static final int activity_recipients=0x7f03001a;
         public static final int activity_signup=0x7f03001b;
-        public static final int fragment_friends=0x7f03001c;
-        public static final int fragment_main=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
+        public static final int activity_view_image=0x7f03001c;
+        public static final int fragment_friends=0x7f03001d;
+        public static final int fragment_main=0x7f03001e;
+        public static final int message_item=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
     }
     public static final class menu {
         public static final int menu_main=0x7f0d0000;
         public static final int menu_recipients=0x7f0d0001;
+        public static final int menu_view_image=0x7f0d0002;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f0b0000;
@@ -1451,26 +1461,29 @@ containing a value of this type.
         public static final int emptyFriends=0x7f0b0016;
         public static final int emptyInbox=0x7f0b0017;
         public static final int error_access_memory=0x7f0b0018;
-        public static final int file_too_large=0x7f0b0019;
-        public static final int hello_world=0x7f0b001a;
-        public static final int login=0x7f0b001b;
-        public static final int loginError=0x7f0b001c;
-        public static final int noAccount=0x7f0b001d;
-        public static final int password=0x7f0b001e;
-        public static final int signup=0x7f0b001f;
-        public static final int signupError=0x7f0b0020;
-        public static final int signupErrorTitle=0x7f0b0021;
-        public static final int title_activity_edit_friends=0x7f0b0022;
-        public static final int title_activity_edit_friends_list=0x7f0b0023;
-        public static final int title_activity_login=0x7f0b0024;
-        public static final int title_activity_main_activity2=0x7f0b0025;
-        public static final int title_activity_recipients=0x7f0b0026;
-        public static final int title_activity_signup=0x7f0b0027;
-        public static final int title_section1=0x7f0b0028;
-        public static final int title_section2=0x7f0b0029;
-        public static final int title_section3=0x7f0b002a;
-        public static final int username=0x7f0b002b;
-        public static final int video_size_warning=0x7f0b002c;
+        public static final int error_sending_file=0x7f0b0019;
+        public static final int file_too_large=0x7f0b001a;
+        public static final int hello_world=0x7f0b001b;
+        public static final int login=0x7f0b001c;
+        public static final int loginError=0x7f0b001d;
+        public static final int message_sent=0x7f0b001e;
+        public static final int noAccount=0x7f0b001f;
+        public static final int password=0x7f0b0020;
+        public static final int signup=0x7f0b0021;
+        public static final int signupError=0x7f0b0022;
+        public static final int signupErrorTitle=0x7f0b0023;
+        public static final int title_activity_edit_friends=0x7f0b0024;
+        public static final int title_activity_edit_friends_list=0x7f0b0025;
+        public static final int title_activity_login=0x7f0b0026;
+        public static final int title_activity_main_activity2=0x7f0b0027;
+        public static final int title_activity_recipients=0x7f0b0028;
+        public static final int title_activity_signup=0x7f0b0029;
+        public static final int title_activity_view_image=0x7f0b002a;
+        public static final int title_section1=0x7f0b002b;
+        public static final int title_section2=0x7f0b002c;
+        public static final int title_section3=0x7f0b002d;
+        public static final int username=0x7f0b002e;
+        public static final int video_size_warning=0x7f0b002f;
     }
     public static final class style {
         /**  Customize your theme here. 

@@ -12,14 +12,17 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.Parse;
 import com.parse.ParseException;
+import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseRelation;
 import com.parse.ParseUser;
+import com.parse.SaveCallback;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -120,24 +123,49 @@ public class RecipientsActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_send) {
-            ParseObject message = createMessege();
-            //send(message);
+            ParseObject message = createMessage();
+            if (message == null) {
+                // error
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle(R.string.signupErrorTitle)
+                    .setMessage(R.string.error_sending_file)
+                        .setPositiveButton(android.R.string.ok, null);
+                AlertDialog dialog = builder.create();
+                dialog.show();
+
+            }
+            else {
+                send(message);
+                finish();
+            }
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    protected ParseObject createMessege() {
+    protected ParseObject createMessage() {
         ParseObject message = new ParseObject(ParseConstants.CLASS_MESSAGES);
         message.put(ParseConstants.KEY_SENDER_ID, ParseUser.getCurrentUser().getObjectId());
         message.put(ParseConstants.KEY_SENDER_NAME, ParseUser.getCurrentUser().getUsername());
         message.put(ParseConstants.KEY_RECIPIENT_IDS, getRecipientIds());
         message.put(ParseConstants.KEY_FILE_TYPE, mFileType);
 
-        byte[] fileBytes;
+        byte[] fileBytes = FileHelper.getByteArrayFromFile(this, mMediaUri);
 
-        return message;
+        if (fileBytes == null) {
+            return null;
+        }
+        else {
+            if (mFileType.equals(ParseConstants.TYPE_IMAGE)) {
+                fileBytes = FileHelper.reduceImageForUpload(fileBytes);
+            }
+            String fileName = FileHelper.getFileName(this, mMediaUri, mFileType);
+            ParseFile file = new ParseFile(fileName, fileBytes);
+            message.put(ParseConstants.KEY_FILE, file);
+
+            return message;
+        }
     }
 
     protected ArrayList<String> getRecipientIds() {
@@ -148,6 +176,26 @@ public class RecipientsActivity extends ActionBarActivity {
             }
         }
         return recipientIds;
+    }
+
+    protected void send(ParseObject message) {
+        message.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    Toast.makeText(RecipientsActivity.this, R.string.message_sent, Toast.LENGTH_LONG).show();
+                }
+                else {
+                    // error
+                    AlertDialog.Builder builder = new AlertDialog.Builder(RecipientsActivity.this);
+                    builder.setTitle(R.string.signupErrorTitle)
+                            .setMessage(e.getMessage())
+                            .setPositiveButton(android.R.string.ok, null);
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+                }
+            }
+        });
     }
 
 }
