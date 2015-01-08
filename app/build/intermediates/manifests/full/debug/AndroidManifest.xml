@@ -10,6 +10,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:name="com.example.prabir.grinchat.GrinChatApplication"
@@ -42,6 +47,15 @@
             android:name="com.example.prabir.grinchat.EditFriendsListActivity"
             android:label="@string/title_activity_edit_friends_list"
             android:parentActivityName="com.example.prabir.grinchat.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.prabir.grinchat.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.prabir.grinchat.RecipientsActivity"
+            android:label="@string/title_activity_recipients"
+            android:parentActivityName="com.example.prabir.grinchat.MainActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.prabir.grinchat.MainActivity" />
