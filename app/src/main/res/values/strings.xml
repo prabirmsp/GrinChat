@@ -21,5 +21,8 @@
     <string name="loginError">Please make sure you complete all the fields!</string>
     <string name="emptyInbox">No new messages!</string>
     <string name="emptyFriends">Haha, you have no friends!</string>
+    <string name="title_activity_edit_friends">Edit Friends</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+    <string name="title_activity_edit_friends_list">Edit Friends</string>
 
 </resources>

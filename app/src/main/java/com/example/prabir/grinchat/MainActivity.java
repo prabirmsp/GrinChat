@@ -2,18 +2,14 @@ package com.example.prabir.grinchat;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
@@ -115,6 +111,10 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         if (id == R.id.action_logout) {
             ParseUser.logOut();
             navigateToLogin();
+        }
+        else if (id == R.id.menu_editFriends) {
+            Intent intent = new Intent(this, EditFriendsListActivity.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

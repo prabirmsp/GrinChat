@@ -38,6 +38,14 @@
             android:parentActivityName="com.example.prabir.grinchat.LoginActivity"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.example.prabir.grinchat.EditFriendsListActivity"
+            android:label="@string/title_activity_edit_friends_list"
+            android:parentActivityName="com.example.prabir.grinchat.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.prabir.grinchat.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

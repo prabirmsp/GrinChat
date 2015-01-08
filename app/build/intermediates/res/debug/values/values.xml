@@ -175,7 +175,10 @@
     <string name="signup">Sign Up!</string>
     <string name="signupError">Please make sure you complete all the fields!</string>
     <string name="signupErrorTitle">Oh là là!</string>
+    <string name="title_activity_edit_friends">Edit Friends</string>
+    <string name="title_activity_edit_friends_list">Edit Friends</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
     <string name="title_activity_signup">SignupActivity</string>
     <string name="title_section1">Inbox</string>
     <string name="title_section2">Friends</string>
