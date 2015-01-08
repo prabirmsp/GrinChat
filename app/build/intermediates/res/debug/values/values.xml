@@ -191,6 +191,7 @@
     <string name="message_sent">Message Sent!</string>
     <string name="noAccount">Don\'t have an account?</string>
     <string name="password">Password</string>
+    <string name="remove_friend">Remove Friend</string>
     <string name="signup">Sign Up!</string>
     <string name="signupError">Please make sure you complete all the fields!</string>
     <string name="signupErrorTitle">Oh là là!</string>

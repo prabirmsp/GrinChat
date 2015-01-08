@@ -31,6 +31,7 @@
     <string name="action_send">Send</string>
     <string name="error_sending_file">There was an error sending your file. Please select another file.</string>
     <string name="message_sent">Message Sent!</string>
+    <string name="remove_friend">Remove Friend</string>
 
     <string-array name="camera_choices">
         <item>Take Picture</item>

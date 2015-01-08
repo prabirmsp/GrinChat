@@ -1469,21 +1469,22 @@ containing a value of this type.
         public static final int message_sent=0x7f0b001e;
         public static final int noAccount=0x7f0b001f;
         public static final int password=0x7f0b0020;
-        public static final int signup=0x7f0b0021;
-        public static final int signupError=0x7f0b0022;
-        public static final int signupErrorTitle=0x7f0b0023;
-        public static final int title_activity_edit_friends=0x7f0b0024;
-        public static final int title_activity_edit_friends_list=0x7f0b0025;
-        public static final int title_activity_login=0x7f0b0026;
-        public static final int title_activity_main_activity2=0x7f0b0027;
-        public static final int title_activity_recipients=0x7f0b0028;
-        public static final int title_activity_signup=0x7f0b0029;
-        public static final int title_activity_view_image=0x7f0b002a;
-        public static final int title_section1=0x7f0b002b;
-        public static final int title_section2=0x7f0b002c;
-        public static final int title_section3=0x7f0b002d;
-        public static final int username=0x7f0b002e;
-        public static final int video_size_warning=0x7f0b002f;
+        public static final int remove_friend=0x7f0b0021;
+        public static final int signup=0x7f0b0022;
+        public static final int signupError=0x7f0b0023;
+        public static final int signupErrorTitle=0x7f0b0024;
+        public static final int title_activity_edit_friends=0x7f0b0025;
+        public static final int title_activity_edit_friends_list=0x7f0b0026;
+        public static final int title_activity_login=0x7f0b0027;
+        public static final int title_activity_main_activity2=0x7f0b0028;
+        public static final int title_activity_recipients=0x7f0b0029;
+        public static final int title_activity_signup=0x7f0b002a;
+        public static final int title_activity_view_image=0x7f0b002b;
+        public static final int title_section1=0x7f0b002c;
+        public static final int title_section2=0x7f0b002d;
+        public static final int title_section3=0x7f0b002e;
+        public static final int username=0x7f0b002f;
+        public static final int video_size_warning=0x7f0b0030;
     }
     public static final class style {
         /**  Customize your theme here. 

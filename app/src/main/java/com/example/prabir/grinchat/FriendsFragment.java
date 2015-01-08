@@ -1,13 +1,16 @@
 package com.example.prabir.grinchat;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -60,8 +63,7 @@ public class FriendsFragment extends ListFragment {
                             android.R.layout.simple_list_item_1,
                             usernames);
                     getListView().setAdapter(adapter);
-                }
-                else {
+                } else {
                     // failure to get friends
                     Log.e(TAG, e.getMessage());
                     AlertDialog.Builder builder = new AlertDialog.Builder(getListView().getContext());
@@ -73,5 +75,30 @@ public class FriendsFragment extends ListFragment {
                 }
             }
         });
+
+        AdapterView.OnItemLongClickListener longClick = new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
+
+                DialogInterface.OnClickListener onClickRemove = new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        mFriendsRelation.remove(mFriends.get(position));
+                        mCurrentUser.saveInBackground();
+                    }
+                };
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setNeutralButton(R.string.remove_friend, onClickRemove);
+                builder.create().show();
+                return false;
+            }
+        };
+        getListView().setOnItemLongClickListener(longClick);
+
+
+
     }
+
+
 }
