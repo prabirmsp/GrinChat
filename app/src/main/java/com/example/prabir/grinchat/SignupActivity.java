@@ -1,5 +1,6 @@
 package com.example.prabir.grinchat;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -22,17 +23,29 @@ public class SignupActivity extends ActionBarActivity {
     protected EditText mEmail;
     protected EditText mPassword;
     protected Button mSighUpButton;
+    protected Button mCancelButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_signup);
+
+        getSupportActionBar().hide();
+
 
         mUsername = (EditText) findViewById(R.id.usernameField);
         mEmail = (EditText) findViewById(R.id.emailField);
         mPassword = (EditText) findViewById(R.id.passwordField);
+
+        mCancelButton = (Button) findViewById(R.id.cancelButton);
+        mCancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         mSighUpButton = (Button) findViewById(R.id.signupButton);
         mSighUpButton.setOnClickListener(new View.OnClickListener() {
             @Override

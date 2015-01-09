@@ -26,6 +26,11 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="apptheme_color">#aa3939</color>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
@@ -36,8 +41,19 @@
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="button_focused">#801515</color>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="button_text">#550000</color>
+    <color name="darker_button">#D46a6a</color>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -46,6 +62,12 @@
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="light_button">#FFAAAA</color>
+    <color name="light_grey">#bbbbbb</color>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
     <color name="material_blue_grey_800">#ff37474f</color>
@@ -143,6 +165,8 @@
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
+    <dimen name="login_padding">10dp</dimen>
+    <dimen name="login_vertical_margin">32dp</dimen>
     <dimen name="message_list_item_vertical_margin">8dp</dimen>
     <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
@@ -179,6 +203,7 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">GrinChat</string>
     <string name="camera">Camera</string>
+    <string name="cancelButton">CANCEL</string>
     <string name="email">Email</string>
     <string name="emptyFriends">Haha, you have no friends!</string>
     <string name="emptyInbox">No new messages!</string>
@@ -186,15 +211,16 @@
     <string name="error_sending_file">There was an error sending your file. Please select another file.</string>
     <string name="file_too_large">The selected file is too large. Video needs to be under 10 MB!</string>
     <string name="hello_world">Hello world!</string>
-    <string name="login">Login</string>
+    <string name="login">LOGIN</string>
     <string name="loginError">Please make sure you complete all the fields!</string>
     <string name="message_sent">Message Sent!</string>
-    <string name="noAccount">Don\'t have an account?</string>
     <string name="password">Password</string>
     <string name="remove_friend">Remove Friend</string>
-    <string name="signup">Sign Up!</string>
+    <string name="signup">Don\'t have an account? Sign Up!</string>
+    <string name="signupButton">SIGN UP</string>
     <string name="signupError">Please make sure you complete all the fields!</string>
     <string name="signupErrorTitle">Oh là là!</string>
+    <string name="subtitle">A Grinnell College App</string>
     <string name="title_activity_edit_friends">Edit Friends</string>
     <string name="title_activity_edit_friends_list">Edit Friends</string>
     <string name="title_activity_login">LoginActivity</string>
@@ -209,8 +235,83 @@
     <string name="video_size_warning">Video needs to be under 10 MB!</string>
     <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/values/styles.xml -->
     <eat-comment/>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="ActionBar.Solid.Grinchat" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_grinchat</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_grinchat</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_grinchat</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Grinchat</item>
+    </style>
+    <style name="ActionBar.Transparent.Grinchat" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_grinchat</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Grinchat</item>
+    </style>
+    <style name="ActionBarTabStyle.Grinchat" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_grinchat</item>
+    </style>
+    <style name="ActionButton.CloseMode.Grinchat" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_grinchat</item>
+    </style>
+    <style name="AuthBackground">
+        <item name="android:background">@drawable/login_bg_filler</item>
+    </style>
+    <style name="AuthBackgroundImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:scaleType">fitStart</item>
+        <item name="android:src">@drawable/login_bg_main</item>
+    </style>
+    <style name="AuthEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/light_grey</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+    <style name="AuthLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/subtitle</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/login_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingLeft">@dimen/login_padding</item>
+        <item name="android:paddingRight">@dimen/login_padding</item>
+        <item name="android:paddingTop">@dimen/login_padding</item>
+        <item name="android:paddingBottom">@dimen/login_padding</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="AuthLoginButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/editTextLayout</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/button_text</item>
+    </style>
+    <style name="AuthSubtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/title</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AuthTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
@@ -966,6 +1067,28 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="ButtonAppTheme" parent="android:Widget.Button">
+        <item name="android:background">@drawable/button_custom</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="DropDownListView.Grinchat" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_grinchat</item>
+    </style>
+    <style name="DropDownNav.Grinchat" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_grinchat</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_grinchat</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_grinchat</item>
+    </style>
+    <style name="EditTextAppTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/apptheme_edit_text_holo_light</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
         <item name="buttonBarStyle">@android:style/ButtonBar</item>
@@ -1091,6 +1214,16 @@
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
     <style name="Platform.AppCompat.Light.Dialog" parent="Platform.AppCompat.Dialog"/>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="PopupMenu.Grinchat" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_grinchat</item>
+    </style>
+    <style name="ProgressBar.Grinchat" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_grinchat</item>
+    </style>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="android:Widget">
         <item name="android:layout_gravity">center_vertical|left</item>
         <item name="android:paddingRight">8dp</item>
@@ -1192,6 +1325,28 @@
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Theme.Grinchat" parent="@android:style/Theme.AppCompat.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_grinchat</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Grinchat</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Grinchat</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Grinchat</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Grinchat</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Grinchat</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_grinchat</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_grinchat
+        </item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Grinchat
+        </item>
+        <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+    </style>
+    <style name="Theme.Grinchat.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Grinchat</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Grinchat</item>
+    </style>
+    <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>

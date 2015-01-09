@@ -1,52 +1,85 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context="com.example.prabir.grinchat.SignupActivity">
+<RelativeLayout
+    style="@style/AuthBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prabir.grinchat.SignupActivity">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/usernameField"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="false"
-        android:hint="@string/username">
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/AuthBackgroundImage"/>
 
-        <requestFocus/>
-    </EditText>
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle"
+        android:text="@string/app_name"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/emailField"
-        android:layout_below="@+id/usernameField"
-        android:layout_alignParentStart="true"
-        android:hint="@string/email"/>
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/AuthSubtitle"
+        android:text="@string/subtitle"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/passwordField"
-        android:layout_below="@+id/emailField"
-        android:layout_alignParentStart="true"
-        android:hint="@string/password"/>
+    <LinearLayout
+        android:id="@+id/signupLinerLayout"
+        style="@style/AuthLinearLayout">
 
+        <EditText
+            android:id="@+id/usernameField"
+            style="@style/AuthEditText"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/username">
+
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/emailField"
+            style="@style/AuthEditText"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/passwordField"
+            style="@style/AuthEditText"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buttonDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="48dip"
+        android:layout_below="@+id/signupLinerLayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/button_divider"
+        />
     <Button
+        style="@style/AuthLoginButton"
+        android:layout_marginRight="0dp"
+        android:id="@+id/signupButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/signup"
-        android:id="@+id/signupButton"
-        android:layout_below="@+id/passwordField"
-        android:layout_alignParentStart="true"/>
+        android:layout_below="@+id/signupLinerLayout"
+        android:text="@string/signupButton"
+        android:layout_toLeftOf="@id/buttonDivider"
+        />
+    <Button
+        style="@style/AuthLoginButton"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupLinerLayout"
+        android:text="@string/cancelButton"
+        android:layout_toRightOf="@id/buttonDivider"
+        />
+
+
 
 </RelativeLayout>
 <!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/layout/activity_signup.xml -->

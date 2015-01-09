@@ -1,5 +1,6 @@
 package com.example.prabir.grinchat;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -30,6 +31,9 @@ public class LoginActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         supportRequestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         setContentView(R.layout.activity_login);
+
+        getSupportActionBar().hide();
+
         setSupportProgressBarIndeterminateVisibility(true);
         mSignUpTextView = (TextView)findViewById(R.id.signupTextView);
         mSignUpTextView.setOnClickListener(new View.OnClickListener() {
@@ -58,12 +62,9 @@ public class LoginActivity extends ActionBarActivity {
                     alertDialog.show();
                 } else {
                     // login
-                    setProgressBarIndeterminateVisibility(true);
                     ParseUser.logInInBackground(username, password, new LogInCallback() {
                         @Override
                         public void done(ParseUser parseUser, ParseException e) {
-                            setProgressBarIndeterminateVisibility(false);
-
                             if (e == null) {
                                 // Logged in
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
