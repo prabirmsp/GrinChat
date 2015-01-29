@@ -8,7 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Parse-1.8.0" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/commons-io-2.4" />
+            <option value="$PROJECT_DIR$/picasso-2.4.0" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.prabir.grinchat.SignupActivity">
+    tools:context="com.example.prabir.grinchat.SignupActivity"
+    >
 
     <ImageView
         android:id="@+id/backgroundImage"
@@ -82,4 +83,4 @@
 
 
 </RelativeLayout>
-<!-- From: file:/home/prabir/Documents/AppDev/GrinChat/app/src/main/res/layout/activity_signup.xml -->
+<!-- From: file:/home/prabir/Documents/AppDev/test/GC2/GrinChat/app/src/main/res/layout/activity_signup.xml -->

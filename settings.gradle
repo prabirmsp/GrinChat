@@ -1,1 +1,1 @@
-include ':app', ':Parse-1.8.0'
+include ':app', ':Parse-1.8.0', ':commons-io-2.4', ':picasso-2.4.0'
