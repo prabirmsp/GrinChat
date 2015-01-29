@@ -19,7 +19,7 @@
 
 <resources>
 
-    <!-- Base application theme. -->
+    <!-- Base application theme.    -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <item name="android:buttonStyle">@style/ButtonAppTheme</item>
     </style>
@@ -34,6 +34,8 @@
         <item name="android:actionModeBackground">@drawable/cab_background_top_grinchat</item>
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_grinchat</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Grinchat</item>
+
+        <item name="android:buttonStyle">@style/ButtonAppTheme</item>
 
         <item name="android:background">@drawable/apptheme_edit_text_holo_light</item>
 
